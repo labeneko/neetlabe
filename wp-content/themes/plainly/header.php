@@ -24,7 +24,10 @@
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 			<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			</div>
+			<div><img src="http://neetla.be/wp-content/uploads/2015/07/k-welcm.gif"></div>
+			<div><img src="http://neetla.be/wp-content/uploads/2015/07/coollogo_com-232372750.gif"></div>
+			<div class="ticker">
+                <p>Welcome to にーとらべ！！！</p>
+            </div>
+			<div><img src="http://neetla.be/wp-content/uploads/2015/07/labeneko.png" style="width: 700px;"></div>
 			</header><!-- #masthead -->

@@ -152,7 +152,6 @@ input,
 select,
 textarea {
 	color: #FFFFFF;
-	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -166,10 +165,6 @@ h5,
 h6 {
 	clear: both;
 	font-weight: bold;
-}
-
-p {
-	margin-bottom: 1.5em;
 }
 
 b,
@@ -992,8 +987,7 @@ object {
 --------------------------------------------------------------*/
 
 body {
-	border-top-style: solid;
-	border-top-width: 0.75em;
+
 }
 
 #page {
@@ -1013,12 +1007,11 @@ body {
 }
 
 .content-area {
-	float: left;
-	margin: 0 -35% 0 0;
+	text-align: center;
 	width: 100%;
 }
 .site-main {
-	margin: 0 35% 0 0;
+	margin: 0;
 }
 .site-content .widget-area {
 	float: right;
@@ -1099,7 +1092,7 @@ body {
 }
 
 a {
-	color: #2F8ED5;
+	color: #228B22;
 }
 
 a:hover,
@@ -1110,10 +1103,13 @@ a:active {
 
 .entry-meta a {
 	color: #666;
+	font-style: italic;
 }
 
 .entry-title {
-	color: #2F8ED5;
+	color: #228B22;
+	font-size: 2em;
+	background: #7dff00;
 }
 .site-footer,
 .site-description {
@@ -1133,4 +1129,25 @@ h6 {
 	color: #666;
 }
 
+.ticker {
+  color: #fcac1a;
+  overflow: hidden;
+}
+
+.ticker p {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2em;
+  padding-left: 100%;
+  -webkit-animation-name: ticker-animation;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+}
+
+@-webkit-keyframes ticker-animation {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+}
+/* webkitのみで省略 */
 
